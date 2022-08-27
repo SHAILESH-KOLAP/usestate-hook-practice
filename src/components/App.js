@@ -12,7 +12,7 @@ function App(props) {
   return (
     <div className="container">
       <h1>{time}</h1>
-      <button onClick={getTime}>Get Time</button>
+      <button onClick={setInterval(getTime, 1000)}>Get Time</button>
     </div>
   );
 }
